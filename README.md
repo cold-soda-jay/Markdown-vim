@@ -1,6 +1,4 @@
-<head><style>div.solid {border-style:solid;}</style></head>
-<b><font size="7">高效做笔记:vim + markdown</font></b>
-
+高效做笔记:vim + markdown
 ------
 
 <center>
