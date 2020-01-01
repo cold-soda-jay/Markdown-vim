@@ -1,3 +1,5 @@
+[原文首发于知乎](https://zhuanlan.zhihu.com/p/84773275)
+
 高效做笔记:vim + markdown
 ------
 
@@ -424,7 +426,7 @@ Plug 'iamcco/markdown-preview.nvim'
 "}}}
 ```
 
-**vimrc** 配置文件和 **snippet** 代码 都可以在我的 [Github](https://github.com/cold-soda-jay/Markdown-vim)。
+**vimrc** 配置文件和 **snippet** 代码 都可以在我的 [Github](https://github.com/cold-soda-jay/Markdown-vim)找到。
 
 -----
 
