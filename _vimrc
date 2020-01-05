@@ -18,6 +18,8 @@ Plug 'SirVer/ultisnips',{'for':'markdown'}
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim'
+Plug 'ferrine/md-img-paste.vim'
+
 
 "}}}
 
@@ -34,7 +36,7 @@ call plug#end()
 
 " Markdown{{{
 let g:vmt_auto_update_on_save = 0 
-let g:mkdp_path_to_chrome ='C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+let g:mkdp_browser  ='C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 let g:mkdp_preview_options = {
     \ 'mkit': {},
     \ 'katex': {},
@@ -51,6 +53,10 @@ let g:vim_markdown_anchorexpr = "'<<'.v:anchor.'>>'"
 let g:vim_markdown_math = 1
 let g:mkdp_auto_start = 0
 let g:vim_markdown_strikethrough = 1
+
+let g:mdip_imgdir = 'pic'
+let g:mdip_imgname = 'image'
+
 "}}}
 
 " UltiSnips{{{
@@ -234,6 +240,8 @@ nnoremap <silent> <F3> :Startify <CR>
 map <leader>ex :!start explorer %:p:h<CR>
 " 打开当前目录CMD
 map <leader>cmd :!start<cr>
+
+autocmd FileType markdown nnoremap <silent> <C-p> :call mdip#MarkdownClipboardImage()<CR>
 
 "}}}
 
